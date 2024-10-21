@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.db_clase1"
+    namespace = "com.example.db_clase1.ui"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.db_clase1"
+        applicationId = "com.example.db_clase1.ui"
         minSdk = 27
         targetSdk = 34 // debe estar en 34
         versionCode = 1
@@ -55,6 +55,8 @@ dependencies {
     // agregar dependencias de room ksp
     implementation(libs.androidx.room.runtime)
     implementation(libs.androidx.room.ktx)
+    implementation(libs.androidx.navigation.runtime.ktx)
+    implementation(libs.androidx.navigation.compose)
     ksp(libs.androidx.room.compiler)
 
     implementation(libs.androidx.core.ktx)

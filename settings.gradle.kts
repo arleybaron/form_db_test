@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "db_clase1"
+rootProject.name = "db_clase1.ui"
 include(":app")
  
